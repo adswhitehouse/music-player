@@ -52,6 +52,103 @@ select {
 }
 /* CSS Reset */
 
+/* Body */
 body {
   font-family: "Nunito", serif;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Player Container */
+.player-container {
+  background-color: #fee3e5;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  width: 30rem;
+}
+
+/* Top Controls */
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.top-controls button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: #d44d80;
+  box-shadow: 0 0 10px rgba(212, 77, 128, 0.25);
+  cursor: pointer;
+}
+
+/* Song Info */
+.song-info img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 0.5rem solid #fff;
+  box-shadow: 0 0 25px rgba(212, 77, 128, 0.25);
+  margin-bottom: 1rem;
+}
+
+.track-name {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.track-artist {
+  text-align: center;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.back-btn,
+.forward-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d44d80;
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(212, 77, 128, 0.25);
+  cursor: pointer;
+}
+
+.play-btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  background-color: #d44d80;
+  box-shadow: 0 0 25px rgba(212, 77, 128, 0.25);
+  cursor: pointer;
+}
+
+/* Media Query */
+@media screen and (max-width: 30rem) {
+  .player-container {
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+  }
 }
