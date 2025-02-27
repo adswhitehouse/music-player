@@ -73,13 +73,13 @@ body {
 }
 
 /* Top Controls */
-.top-controls {
+.nav-controls {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.top-controls button {
+.nav-controls button {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
@@ -88,27 +88,49 @@ body {
   justify-content: center;
   border: none;
   color: #d44d80;
-  box-shadow: 0 0 10px rgba(212, 77, 128, 0.25);
+  box-shadow: 0 2px 15px rgba(212, 77, 128, 0.5);
   cursor: pointer;
 }
 
-/* Song Info */
-.song-info img {
+/* Song Data */
+.song-data img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 0.5rem solid #fff;
-  box-shadow: 0 0 25px rgba(212, 77, 128, 0.25);
-  margin-bottom: 1rem;
+  box-shadow: 0 2px 15px rgba(212, 77, 128, 0.5);
 }
 
-.track-name {
-  font-size: 1.25rem;
-  text-align: center;
+.track-title {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
-.track-artist {
-  text-align: center;
+.song-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.range-input {
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: #d44d80;
+  border-radius: 1rem;
+  height: 0.75rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background-color: #d44d80;
+  border: 0.4rem solid #fff;
+  cursor: pointer;
 }
 
 /* Controls */
@@ -119,29 +141,26 @@ body {
 }
 
 .back-btn,
-.forward-btn {
+.forward-btn,
+.play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
   border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #d44d80;
   background-color: #fff;
-  box-shadow: 0 0 25px rgba(212, 77, 128, 0.25);
+  box-shadow: 0 2px 15px rgba(212, 77, 128, 0.5);
   cursor: pointer;
 }
 
 .play-btn {
   width: 5rem;
   height: 5rem;
-  border-radius: 50%;
-  border: none;
   color: #fff;
   background-color: #d44d80;
-  box-shadow: 0 0 25px rgba(212, 77, 128, 0.25);
-  cursor: pointer;
 }
 
 /* Media Query */

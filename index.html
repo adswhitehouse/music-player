@@ -7,9 +7,11 @@
   <title>Music Player</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="shortcut icon" href="./images/icons8-yandex-music-16.png" type="image/x-icon">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -17,22 +19,32 @@
 </head>
 
 <body>
+
   <div class="player-container">
-    <div class="top-controls">
+
+    <nav class="nav-controls">
       <button><i class="fa-solid fa-chevron-left"></i></button>
       <button><i class="fa-solid fa-bars"></i></button>
-    </div>
-    <div class="song-info">
+    </nav>
+
+    <div class="song-data">
       <img src="./images/468-thumbnail.png" alt="current song artwork">
-      <p class="track-name">Despacito</p>
+      <h1 class="track-title">Despacito</h1>
       <p class="track-artist">Luis Fonsi Ft. Puerto Rican</p>
+      <audio class="jsTrack">
+        <source src="./Go! - NEFFEX.mp3" type="audio/mpeg">
+      </audio>
+      <input class="range-input jsRangeInput" type="range" value=0>
     </div>
+
     <div class="controls">
       <button class="back-btn"><i class="fa-solid fa-backward"></i></button>
-      <button class="play-btn"><i class="fa-solid fa-play"></i></button>
+      <button class="play-btn jsPlayBtn"></button>
       <button class="forward-btn"><i class="fa-solid fa-forward"></i></button>
     </div>
+
   </div>
+
   <script src="./script.js"></script>
 </body>
 
